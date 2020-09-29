@@ -19,6 +19,11 @@ public class HelloSpringApp {
         System.out.println(myCoach.getDailyWorkout());
         System.out.println(myCoach.getDailyFortune());
 
+        // print literal values
+        TrackCoach trackCoach = context.getBean("myCoach", TrackCoach.class);
+        System.out.println(trackCoach.getEmail());
+        System.out.println(trackCoach.getTeamName());
+
         // close the context
         context.close();
     }

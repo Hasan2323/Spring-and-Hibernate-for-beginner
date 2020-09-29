@@ -8,14 +8,31 @@ package com.luv2code.springdemo;
 public class TrackCoach implements Coach {
 
     private FortuneService fortuneService;
+    private String email;
+    private String teamName;
 
 //    public TrackCoach(FortuneService fortuneService) {
 //        this.fortuneService = fortuneService;
 //    }
 
-
     public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTeamName() {
+        return teamName;
     }
 
     @Override
